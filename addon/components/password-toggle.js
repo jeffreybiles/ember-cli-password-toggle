@@ -50,5 +50,10 @@ export default Component.extend({
   }),
   inputClazz: computed('inputClass', function() {
     return 'ember-password-toggle-input ' + get(this, 'inputClass') ;
-  })
+  }),
+  actions: {
+    focusOut(){
+      this['focus-out']()
+    }
+  }
 });
